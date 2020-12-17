@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Visit us - Space Z</title>
+        <meta charset="utf-8">
+        <meta name="description" content="UoL CS WebDev - Space Z">
+        <meta name="keywords" content="spaceZ, space, universe, theme park, entertainment, fun, family, rides, attraction, amusement">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/stylesheet.css">
+    </head>
+    
+    <body>
+        <!-- Header for the Visit us page-->
+        <header>
+            <a href= "./index.html"><img src ="./images/logo.svg" alt="SpaceZ logo - a rocket" width="50"></a>
+<!--            <h1>Space Z</h1>-->
+        </header>
+        <nav class="main-menu">
+<!--            <a href="index.html">Home</a>-->
+            <a href="./attractions.html">Attractions</a>
+            <a href="./visit-us.html">Visit us</a>
+            <a id="main-button" href="./visit-us.html">Buy tickets</a>
+        </nav>
+        <!-- Main content with special offers and pricing-->
+        <main>
+            <h2>Special Offers</h2>
+            <img src="./images/guillermo-ferla-Oze6U2m1oYU-unsplash.jpg" alt="offers-banner">
+            <h5>Check out our special promotions</h5>
+<!--
+            <h2>Pricing</h2>
+            <img src="images/shot-by-cerqueira-0o_GEzyargo-unsplash.jpg" alt="pricing-banner"> 
+-->
+        </main>
+        
+        <aside>
+            <!-- Information about tickets-->
+            <h3>Tickets</h3>
+            <p>Buy tickets to enjoy our attractions and facilities</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Age</th>
+                        <th>Type</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Infant</td>
+                        <td>Day Pass</td>
+                        <td>USD 20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Child</td>
+                        <td>Day Pass</td>
+                        <td>USD 40.00</td>
+                    </tr>
+                    <tr>
+                        <td>Adult</td>
+                        <td>Day Pass</td>
+                        <td>USD 60.00</td>
+                    </tr>
+                    <tr>
+                        <td>Infant</td>
+                        <td>Season Pass</td>
+                        <td>USD 200.00</td>
+                    </tr>
+                    <tr>
+                        <td>Child</td>
+                        <td>Season Pass</td>
+                        <td>USD 400.00</td>
+                    </tr>
+                    <tr>
+                        <td>Adult</td>
+                        <td>Season Pass</td>
+                        <td>USD 600.00</td>
+                    </tr>      
+                </tbody>
+            </table>
+            <br>
+            <!-- Form to select tickets-->
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="type-visitor">Type of visitor</label>
+                <select name="type-visitor" id="type-visitor">
+                    <option value="infant">Infant</option>
+                    <option value="child">Child</option>
+                    <option value="adult">Adult</option>
+                </select>
+                <br>
+                <label for="type-pass">Type of pass</label>
+                <select name="type-pass" id="type-pass">
+                    <option value="day">Day pass</option>
+                    <option value="season">Season pass</option>
+                </select>
+                <br>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity"><br>
+                <label for="date">Date of visit</label>
+                <input type="date" id="date" name="date"><br>
+                <input type="submit" name="Buy" value="Buy">
+            </form>
+        </aside>
+        <!-- Section to show the map of the park-->
+        <div class="park-map">
+            <img src="./images/undraw_location_search_bqps%20(1).svg" alt="park-map">
+            <h3>Space Z Map</h3>
+            <h5>Find  your favorite attraction</h5>
+        </div>
+        
+        <div class="facilities">
+<!--            <img src="images/undraw_to_the_moon_v1mv.svg" alt="park-facilities" width="300" height="300">-->
+            <h3>Facilities</h3>
+            
+            <h5>Food & Drink</h5>
+                <!-- Restaurants information and open hours-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Open Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Solar Eclipse</td>
+                            <td>Lunch and Dinner</td>
+                            <td>11:00 am to 10:00pm</td>
+                        </tr>
+                        <tr>
+                            <td>Pizza Planet</td>
+                            <td>Lunch and Dinner</td>
+                            <td>11:00 am to 10:00pm</td>
+                        </tr>
+                        <tr>
+                            <td>Moon Burger</td>
+                            <td>Lunch and Dinner</td>
+                            <td>12:00 pm to 10:00pm</td>
+                        </tr>
+                        <tr>
+                            <td>Milky Way</td>
+                            <td>Breakfast, Coffee and Desserts</td>
+                            <td>8:00 am to 7:00pm</td>
+                        </tr>
+                        <tr>
+                            <td>Nebula Refreshers</td>
+                            <td>Drinks and Ice Cream</td>
+                            <td>8:00 am to 10:00pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            <!-- Section for services available for guests -->
+            <h5>Guest Services</h5>
+            <ul>
+                <li>Open hours: 8:00 am to 10:pm</li>
+                <li>Location: Near the main entrance gate</li>
+                <li>We can help you to:
+                    <ul>
+                        <li>Book a restaurant</li>
+                        <li>Get a stroller or a wheelchair</li>
+                        <li>Get a season pass</li>
+                        <li>Get a park map in your language</li>
+                    </ul>
+                </li>
+                <li>We speak English, Spanish, French, Chinese, Portuguese and Japanese</li>
+            </ul>
+            
+        </div>
+        <!-- Park open hours-->
+        <div class="park-hours">
+            <h3>Park Hours</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <td>Open hour</td>
+                        <td>Close hour</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>8:00am</td>
+                        <td>10:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>8:00am</td>
+                        <td>10:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>8:00am</td>
+                        <td>10:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>8:00am</td>
+                        <td>10:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>8:00am</td>
+                        <td>11:45pm</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>8:00am</td>
+                        <td>11:45pm</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>8:00am</td>
+                        <td>11:45pm</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Parking information-->
+            <h3>Parking</h3>
+            <p>We have space for more than 1000 vehicules in our facilities</p>
+        </div>
+        <div class="park-location">
+            <!-- Park Location-->
+            <h3>Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17586.052336496687!2d-90.29314198947215!3d35.40343947767542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d590a0851a67b9%3A0xa1650316787452e8!2sFogleman%20Township%2C%20AR%2C%20USA!5e0!3m2!1sen!2spe!4v1606878157787!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>  
+        </div>
+        
+        <!-- Footer-->
+        <footer>
+            <img  class="footer-logo" src="./images/logo.svg" alt="logo-spacez">
+            <h5>Space Z</h5>
+            <address>
+                <a href="mailto:info@spacez.com">info@spacez.com</a>
+                <a href="tel:+19345929023">+1 934 592 9023</a>
+            </address>
+            <nav class="footer-menu">
+                <a href="./about.html">About us</a>
+                <a href="./contact.html">Contact us</a>
+                <a href="./faq.html">FAQ</a>
+            </nav>     
+        </footer>
+        <p class="copyright">&copy; 2020 Space Z. All rights reserved.</p>
+    
+    </body>
+</html>
