@@ -13,7 +13,7 @@ body {
         ". park-hours park-hours park-hours park-hours park-hours park-location park-location park-location park-location park-location ."
         ". footer footer footer footer footer footer footer footer footer footer ."
         ". copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright .";    
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-columns: 5em, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 5em;
     grid-row: auto;
     
 }
@@ -84,8 +84,16 @@ main h2 {
 main h5 {
     z-index: 1;
     position: absolute;
-    top: 25em;
+    top: 30em;
     left: 5.5em;
+    color: #fff;
+}
+
+main p {
+    z-index: 1;
+    position: absolute;
+    top: 33em;
+    left: 7em;
     color: #fff;
 }
 
@@ -99,18 +107,37 @@ aside {
 }
 
 aside h3 {
+    z-index: 1;
+    position: relative;
     text-align: center;
+    
 }
 
 aside p {
-    text-align: left;
-    padding: 0.5em;
+    text-align: center;
+    position: relative;
+    margin-top: 1em;
+    padding-left: 0.5em;
+    
 }
 
 aside table {
     margin-left:auto; 
     margin-right:auto;
 }
+
+aside img {
+    z-index: 0;
+    height: 100%;
+    max-width: 100%
+}
+
+aside button {
+    z-index: 2;
+    position: absolute;
+    
+}
+
 th, td {
   border: 1px solid #388697;
 }
@@ -133,7 +160,7 @@ tbody {
 }
 
 .park-map img {
-    width: 80%;
+    width: 90%;
     height: 600px;
     z-index: 0;
 }
@@ -188,7 +215,7 @@ tbody {
     font-family:'Open Sans', sans-serif;
     font-weight: 200;
     font-size: 1em;
-    color: #fff;
+    color: #fff;    
 }
 
 .facilities ul {
@@ -231,6 +258,7 @@ footer {
     color: #ffffff;
     min-height: 10em; 
     text-align: center;
+    
 }
 
 .copyright {
@@ -359,3 +387,76 @@ a:active {
     color: #B5FFE1;
     text-decoration-line: none;
 }
+
+/* index.html specific styling */
+
+.mainPanel{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    margin:0em;
+    padding:0em;  
+    
+}
+.mainPanel ul{
+    text-align: center;
+}
+.mainPanel ul li{
+
+    display:inline;
+    list-style-type: none;
+    margin:auto 75px auto auto;   
+}
+.mainPanel img:first-of-type{
+    position:relative;
+    left:0px;
+    border-style:groove;
+    z-index: 1;
+}
+
+.asidesPanel{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    max-width:25em;
+    margin:0em 0em 0em 2em;
+    right:0px;
+}
+
+.asidesPanel img{
+    width:100%;
+    border-radius: 5px;
+  
+}
+.safetyAside, .shopAside, .mapAside, .foodAside{
+    margin:0px;
+}
+#leftArrow{
+    position:absolute;
+    width:2%;
+    top:250px;
+    align-self:flex-start;
+    z-index: 2;
+}
+#rightArrow{
+    position:absolute;
+    width:2%;
+    top:250px;
+    align-self:flex-end;
+    z-index: 2;
+
+}
+#displayProgress{
+   
+    position:absolute;
+    top:-3em;
+    align-self: center;
+    height:5%;
+    width:25%;
+    padding:0px;
+    margin:auto;
+    border:0px;
+    z-index: 2;
+}
+
+/* End index.html */
