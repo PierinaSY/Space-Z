@@ -21,18 +21,26 @@ body {
 header {
     grid-area: header;
     background: #08415C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
     color: #ffffff;
+/*
     max-height: 2em;
     padding-top: 1em;
-    text-align: left;
+*/
+    text-align: center;
+    position:fixed;
+    height:7%;
+/*    margin:0px;*/
+/*    padding:10px 0px 0px 0px;*/
+    z-index:5;
     
 }
 
 header img {
     width: 100%;
-    height: 100%;
+    height: 95%;
     text-align: left;
+    margin-left: 2em;
 }
 
 nav {
@@ -41,8 +49,15 @@ nav {
     max-height: 3em;
     box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.10);
     color: #ffffff;
-    text-align: center;
+    text-align: right;
     padding-top: 0.8em;
+    margin-right: 6em;
+    
+    
+    position:fixed;
+    width:100%;
+    padding-bottom: 1.7em;
+    z-index: 4;
     
 }
 
@@ -68,7 +83,7 @@ main {
 
 main img {
     width: 100%;
-    height: 600px;
+    height: 800px;
     z-index: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -102,18 +117,26 @@ aside {
     text-align: center;
     background: rgba(232, 232, 232, 0.85);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    max-height: 600px;
     margin-right: 4em;
+    margin-top: 2em;
+        
 }
 
-aside h3 {
+.rides {
+    align-self: center;
+    justify-self: center;
+}
+.rides h3 {
     z-index: 1;
-    position: relative;
+    margin-top: 6em;
+    margin-left: 8em;
+    position: absolute;
     text-align: center;
+    color: #fff;
     
 }
 
-aside p {
+.rides p {
     text-align: center;
     position: relative;
     margin-top: 1em;
@@ -121,21 +144,42 @@ aside p {
     
 }
 
-aside table {
+.tickets h3 {
+    margin-top: 3em;
+    position: relative;
+    text-align: center;
+    display: block;
+    
+}
+
+.tickets p {
+    text-align: center;
+    position: relative;
+    margin-top: 1em;
+    padding-left: 0.5em;
+    
+}
+
+.tickets table {
     margin-left:auto; 
     margin-right:auto;
 }
 
-aside img {
+.rides img {
     z-index: 0;
     height: 100%;
-    max-width: 100%
+    max-width: 100%;
 }
 
-aside button {
+.rides button {
     z-index: 2;
-    position: absolute;
-    
+    position: relative;
+    background: #CC2936;
+    padding: 0.8em;
+    border-radius: 8px;
+    color: #FFF;
+    font-family: 'Rajdhani', sans-serif;
+    box-shadow: none; 
 }
 
 th, td {
@@ -160,7 +204,7 @@ tbody {
 }
 
 .park-map img {
-    width: 90%;
+    width: 100%;
     height: 600px;
     z-index: 0;
 }
@@ -182,6 +226,17 @@ tbody {
     color: #fff;
     
 }
+.park-map button {
+    z-index: 2;
+    position: relative;
+    background: #B5FFE1;
+    padding: 0.8em;
+    border-radius: 8px;
+    color: #333;
+    font-family: 'Rajdhani', sans-serif;
+    box-shadow: none; 
+    border-color: #B5FFE1;
+}
 
 .facilities {
     grid-area: facilities;
@@ -190,6 +245,12 @@ tbody {
     margin-right: 4em;
 
 }
+
+.facilities img {
+    z-index: 0;
+
+}
+
 .facilities h3 {
     text-align: center;
 }
@@ -222,15 +283,49 @@ tbody {
     text-align: center;
 }
 
+.facilities button {
+    z-index: 2;
+    position: relative;
+    background: #CC2936;
+    padding: 0.8em;
+    border-radius: 8px;
+    color: #FFF;
+    font-family: 'Rajdhani', sans-serif;
+    box-shadow: none; 
+}
 .park-hours {
     grid-area: park-hours;
     padding-left: 4em;
+}
+
+.park-hours button {
+    z-index: 2;
+    position: relative;
+    background: #CC2936;
+    padding: 0.8em;
+    border-radius: 8px;
+    color: #FFF;
+    font-family: 'Rajdhani', sans-serif;
+    box-shadow: none; 
+}
+
+.park-location button {
+    z-index: 2;
+    position: relative;
+    background: #CC2936;
+    padding: 0.8em;
+    border-radius: 8px;
+    color: #FFF;
+    font-family: 'Rajdhani', sans-serif;
+    box-shadow: none; 
 }
 
 .park-location {
     grid-area: park-location;
     padding-right: 4em;
 }
+
+
 /*
 .park-info {
     grid-area: park-info;
