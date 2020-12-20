@@ -7,70 +7,63 @@
         <meta name = "author" content="UoL CS WebDev - Space Z">
         <meta name ="keywords" content="spaceZ, space, universe, theme park, entertainment, fun, family, rides, attraction, amusement">
         <meta name="viewport" content="width=device-width, initial-scale =1.0" > 
-        <link rel="stylesheet" href="styles/stylesheet.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     
     <body class="container">
         <header>
-            <a href= "index.html"><img src ="images/logo.svg" alt="SpaceZ logo - a rocket" width="50"></a>
-<!--            <h1>Space Z</h1>-->
-        </header>
-        <nav class="main-menu">
+            <a href= "index.html"><img src ="images/logo.svg" alt="SpaceZ logo - a rocket"></a>
+            <nav class="main-menu">
 <!--            <a href="index.html">Home</a>-->
-            <a href="attractions.html">Attractions</a>
-            <a href="visit-us.html">Visit us</a>
-            <a id="main-button" href="visit-us.html">Buy tickets</a>
-        </nav>
-        <main>
-            <!-- Landing area for asides-->
-            <h2>Spaceship ride</h2>
-            <img src="images/sandro-katalina-k1bO_VTiZSs-unsplash.jpg" alt="spaceship-ride">
-            <p>Our flagiship attraction that will inmerse you in a trip to outer space</p>   
-        </main> 
-        <!-- Asides for navigation--> 
-        <aside class="rides">
-            <a href="#rides"><h3>Our rides</h3></a>
-            <img src="images/nathan-duck-KnLj3o9A66E-unsplash.jpg" alt="rides-photo">
-            
-            <a href="#food"><h3>Food</h3></a>
-            <img src="images/solar%20eclipse.jpg" alt="The solar eclipse restaurant on display" width ="640">
-        </aside>
-        <div class="park-map">
-            <h3>Observatory</h3>
-            <img src="images/brian-mcgowan-0A450BR1JWk-unsplash.jpg" alt="observatory-photo"><br>
-            <button>Schedule your visit</button>
-        </div>
-        <div class="facilities">
-            <h3>Events</h3>
-            <img src="images/pablo-heimplatz-ZODcBkEohk8-unsplash.jpg" alt="events-photo"><br>
-            <button>Check our schedule</button>
-        </div>
-        <div class="park-hours">
-            <h3 id="food">Food</h3>
-            <img src="images/solar%20eclipse.jpg" alt="The solar eclipse restaurant on display" width ="640">
-            <p> The Solar Eclipse is one of our oldest and most popular restaurants with form families. We have world renouned chefs like Emril Lagasse serving up unique meals like tasty pork tender loing in cosmic dust sauce with a choice of 5 astronomical sides. Famous celebs like Justin Beiber, Will Smith, Barack Obama, Jennifer Lopez, Marilyn Monroe and Elvis, just to name a few, have all dined at the Solar Eclipse at some point in their careers. </p> 
-            <button>Book a meal</button>
-        </div> 
-        <div class="park-location">    
-            <h3 id="rides">Our rides</h3>
-            <img src="images/nathan-duck-KnLj3o9A66E-unsplash.jpg" alt="rides-photo">
-            <button>View more</button>
-            <p>This is a text where we describe our most famous rides</p>
+                <a href="attractions.html">Attractions</a>
+                <a href="visit-us.html">Visit us</a>
+                <a id="main-button" href="visit-us.html">Buy tickets</a>
+            </nav>
+        </header>
+        <div class="main_grid">
+            <main>
+                <!-- Landing area for asides-->
+                <h2>Spaceship ride</h2>
+                <img src="images/sandro-katalina-k1bO_VTiZSs-unsplash.jpg" alt="spaceship-ride">
+                <p>Our flagiship attraction that will inmerse you in a trip to outer space</p>   
+            </main> 
+            <!-- Asides for navigation--> 
+            <aside class="rides">
+                <a href="#rides"><h3>Our rides</h3></a>
+                <img src="images/nathan-duck-KnLj3o9A66E-unsplash.jpg" alt="rides-photo">
+                <button>View more</button>
+            </aside>
+            <div class="observatory">
+                <h3>Observatory</h3>
+                <img src="images/brian-mcgowan-0A450BR1JWk-unsplash.jpg" alt="observatory-photo"><br>
+                <button>Schedule your visit</button>
+            </div>
+            <div class="events">
+                <h3>Events</h3>
+                <img src="images/pablo-heimplatz-ZODcBkEohk8-unsplash.jpg" alt="events-photo"><br>
+                <button>Check our schedule</button>
+            </div>
+            <div class="food">
+                <h3>Food</h3>
+                <img src="images/solar%20eclipse.jpg" alt="The solar eclipse restaurant on display" width ="640">
+                <p> The Solar Eclipse is one of our oldest and most popular restaurants with form families. We have world renouned chefs like Emril Lagasse serving up unique meals like tasty pork tender loing in cosmic dust sauce with a choice of 5 astronomical sides. Famous celebs like Justin Beiber, Will Smith, Barack Obama, Jennifer Lopez, Marilyn Monroe and Elvis, just to name a few, have all dined at the Solar Eclipse at some point in their careers. </p> 
+                <button>Book a meal</button>
+            </div> 
         </div>
         <!-- Footer-->
         <footer>
-            <img  class="footer-logo" src="images/logo.svg" alt="logo-spacez">
-            <h5>Space Z</h5>
+            <img src="images/logo.svg" alt="logo-spacez">
             <address>
                 <a href="mailto:info@spacez.com">info@spacez.com</a>
+                <br>
                 <a href="tel:+19345929023">+1 934 592 9023</a>
             </address>
             <nav class="footer-menu">
                 <a href="about.html">About us</a>
                 <a href="contact.html">Contact us</a>
                 <a href="faq.html">FAQ</a>
-            </nav>     
+            </nav>  
+            <p class="copyright">&copy; 2020 Space Z. All rights reserved.</p>
         </footer>
-        <p class="copyright">&copy; 2020 Space Z. All rights reserved.</p>
     </body>
 </html>

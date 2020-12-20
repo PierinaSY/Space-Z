@@ -1,0 +1,227 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background: #E8E8E8;
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    grid-template-columns: 3fr, 3fr, 3fr;
+    grid-gap: 0.5em ;
+    grid-row: auto; 
+}
+
+/* Basic Grid definition */
+
+header {
+    grid-area: header;
+    height: 5em;
+    background: #08415C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    text-align: center;
+}
+
+.main_grid {
+    grid-area: main;
+}
+
+
+footer {
+    grid-area: footer;
+    height: 10em;
+    background: #08415C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Logo Size for header and footer*/
+header img {
+    height: 100%;
+}
+
+footer img {
+    height: 30%;
+}
+
+/* Main Menu */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin:0.5em;
+}
+
+/* Main Menu button */
+#main-button {
+    z-index: 2;
+    background: #CC2936;
+    padding: 0.8em;
+    border-radius: 8px;
+    color: #FFF;
+    font-family: 'Rajdhani', sans-serif;
+    border: none;
+}
+
+/*Footer extra Styling */
+address a { 
+    color: #fff;
+    line-height: 1.7em;
+    font-size: 0.9em;
+    
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+/* Text Styling H1 to H6, paragraph and link general appearance */
+
+h1 {
+    font-family: Rajdhani, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 61px;
+    text-align: left;
+    color: #333333;
+}
+
+h2 {
+    font-family: Rajdhani, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: left;
+    color: #333333;
+}
+
+h3 {
+    font-family: Rajdhani, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: left;
+    color: #333333;
+}
+
+h4 {
+    font-family: Rajdhani, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: left;
+    color: #333333;
+}
+
+h5 {
+    font-family: Rajdhani, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left;
+    color: #333333;
+}
+
+h6 {
+    font-family: Rajdhani, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    color: #333333;
+}
+
+p {
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    color: #333333;
+}
+
+a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    text-decoration-line: underline;  
+    color: #333333;
+}
+
+a:hover {
+    color: #B5FFE1;
+}
+
+a:active {
+    color: #B5FFE1;
+}
+
+/* Buttons, Lists and Tables */
+
+button { 
+    z-index: 2;
+    background: #CC2936;
+    padding: 0.8em;
+    border-radius: 8px;
+    color: #FFF;
+    font-family: 'Rajdhani', sans-serif;
+    border: none;
+}
+
+ul {
+    text-align: left;
+}
+
+table { 
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+th, td {
+  border: 1px solid #388697;
+}
+
+thead {
+    background: #388697;
+    color: #fff;
+    text-align: center;
+}
+
+tbody {
+    font-family:'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+}
+
+/*Custom CSS for Home special elements */
+
+
+/*Custom CSS for Attractions special elements */
+
+
+/* Custom CSS for Visit us special elements */
+
+#buy_button {
+    z-index: 2;
+    background: #CC2936;
+    padding: 0.8em;
+    border-radius: 8px;
+    color: #FFF;
+    font-family: 'Rajdhani', sans-serif;
+    border: none;
+}
