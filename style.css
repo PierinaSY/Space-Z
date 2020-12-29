@@ -1,86 +1,415 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
-body {
+html,body{
+    height:100%vh;
+    width:100%vw;
+    border:0;
+    margin-top:0em;
+}
+
+
+body{
     font-family: 'Rajdhani', sans-serif;
     background: #E8E8E8;
-    display: grid;
-    grid-template-areas: 
-        "header header header"
-        "main main main"
-        "footer footer footer";
-    grid-template-columns: 3fr, 3fr, 3fr;
-    grid-gap: 0.5em ;
-    grid-row: auto; 
+  
+    
 }
-
-/* Basic Grid definition */
-
-header {
-    grid-area: header;
-    height: 5em;
-    background: #08415C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+header{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    position:fixed;
+    width:99%;
+    background-color:#08415C;
+    box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.10);
     color: #ffffff;
-    text-align: center;
+    height:5em;
+    z-index:6;
 }
-
-.main_grid {
-    grid-area: main;
+nav ul li{
+    display:inline-block;
+    margin:auto 0em auto 0em;
 }
-
-
-footer {
-    grid-area: footer;
-    height: 10em;
-    background: #08415C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: #ffffff;
-    text-align: center;
+nav ul li:last-child{
+    margin-right:3em;
 }
-
-/* Logo Size for header and footer*/
-header img {
-    height: 100%;
-}
-
-footer img {
-    height: 30%;
-}
-
-/* Main Menu */
 nav a {
     color: #ffffff;
-    text-decoration: none;
-    margin:0.5em;
+    text-decoration-line: none;
+    text-align: right;
+    padding-left: 2em;
+    padding-right: 2em;
+    
+}
+.logo{
+    margin:auto 0em auto 2em;
+}
+.header_nav {
+    margin-top:auto;
+    margin-bottom: auto;
+    
+}
+.wrapper{
+    display:grid;
+    grid-template-columns:  9fr 3fr ;
+    grid-template-areas: 
+        "main aside "
+        " park-map facilities "
+        " park-hours park-location ";
+    
+    grid-template-rows:auto;
+    column-gap: 0.5em;
+    position:relative;
+    top:6em;
+    padding:0em;
+    margin-left:1em;
+    margin-right:1em;
+    z-index:5;
+}
+main{
+    grid-area: main;
+    display:flex;
+    flex-direction: column;
+}
+#main_img { /*adjustment*/
+    position:relative;
+    z-index:1;
+    top:-4.6em;
+    height: 40em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+main h2 {
+    top: 12em;
+    left: 3em;
+    color: #fff;
 }
 
-/* Main Menu button */
+main h5 {
+    top: 30em;
+    left: 5.5em;
+    color: #fff;
+}
+
 #main-button {
-    z-index: 2;
+    background: #CC2936;
+    padding: 0.5em;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#attractions img{
+    width:40em;
+}
+
+.slideshow_container{
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+    text-align:center;
+}
+.slideshow_container img{
+    width:100%;
+    
+}
+.slideshow_container ul li{
+    display:inline-block;
+    margin-right:3em;
+}
+.slideshow_container ul a{
+    color:white;
+    
+}
+
+.rides {
+    align-self: center;
+    justify-self: center;
+}
+.rides h3 {
+    margin-top: 6em;
+    margin-left: 8em;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.rides p {
+    text-align: center;
+    position: relative;
+    margin-top: 1em;
+    padding-left: 0.5em;
+    
+}
+
+.tickets{
+    height:40em;
+    margin-left:0em;
+    margin-right:auto;
+    max-width:30em;
+ 
+   
+}
+.tickets h3 {
+    margin-top: 1em;
+    position: relative;
+    text-align: center;
+    display: block;
+    
+}
+
+.tickets p {
+    text-align: center;
+    position: relative;
+    margin-top: 1em;
+    padding-left: 0.5em;
+    
+}
+
+.tickets table {
+    margin-left:auto; 
+    margin-right:auto;
+    margin-bottom:1em;
+}
+
+.rides img {
+    z-index: 0;
+    height: 100%;
+    max-width: 100%;
+}
+
+.rides button {
+    position: relative;
     background: #CC2936;
     padding: 0.8em;
     border-radius: 8px;
     color: #FFF;
     font-family: 'Rajdhani', sans-serif;
-    border: none;
+    box-shadow: none; 
 }
 
-/*Footer extra Styling */
-address a { 
+th, td {
+  border: 1px solid #388697;
+  padding: 0em 1em; /*adjustment*/
+}
+thead {
+    background: #388697;
     color: #fff;
-    line-height: 1.7em;
+    text-align: center;
+    font-size: 1.1em;/*adjustment*/
+}
+
+tbody {
+    font-family:'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 0.9em;/*adjustment*/
+}
+.park-map {
+    grid-area:park-map;
+    padding-left: 4em;
+    background:pink;
+}
+
+.park-map img {
+    width: 100%;
+    height: 600px;
+    z-index: 0;
+}
+
+.park-map h3 {
+    top: 35em;
+    left: 4em;
+    color: #fff; 
+}
+
+.park-map h5 {
+    top: 55em;
+    left: 6em;
+    color: #fff;  
+}
+
+.facilities {
+    grid-area: facilities;
+    background: #388697;
+    text-align: center;
+    max-width:35em;
+}
+
+.facilities h3 {
+    text-align: center;
+}
+
+.facilities h5 {
+    text-align: center;
+}
+
+.facilities table {
+    margin-left:auto; 
+    margin-right:auto;
+}
+.facilities th, td {
+  border: 1px solid #fff;
+}
+.facilities thead {
+    background: #fff;
+    color: #388697;
+    text-align: center;
+}
+
+.facilities tbody {
+    font-family:'Open Sans', sans-serif;
+    font-weight: 200;
     font-size: 0.9em;
+    color: #fff;    
+}
+
+.facilities ul {
+    text-align: center;
+}
+
+.park-hours {
+    grid-area: park-hours;
+    padding-left: 4em;
+}
+
+.park-location {
+    grid-area: park-location;
+    height: 100%;
+}
+
+
+.park-map, .facilities, .park-hours, .park-location{
+    position:relative;
+    top:-9em;
+
+}
+
+aside{
+    grid-area: aside;
+    position:relative;
+    background: rgba(232, 232, 232, 0.85);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 4em;
+    margin-top: 2em;
+    padding-left:2em;
+    padding-right:2em;
+    max-width: 25em;
+    min-width:25em;
     
 }
 
-footer p {
-    color: #fff;
-    text-align: center;
-    font-size: 0.8em;
+aside img{
+    max-width:25em;
 }
 
-/* Text Styling H1 to H6, paragraph and link general appearance */
+aside form {/*adjustment*/
+    position:relative;
+    top:-2em;
+    margin:0em;
+/*    padding:1em;*/
+    font-size:1em;
+    line-height:1.5em;
+}
+aside form label{
+    display:inline-block;
+    width:5.8em;
+
+}
+aside input[type=text], input[type=email], input[type=number],   {/*adjustment*/
+    width:15em;
+    height:2em;
+    margin-bottom:0.5em;
+    font-family: 'Rajdhani', sans-serif;
+}
+aside input[type=date], select {
+    width:12.4em;
+    height:2em;
+    margin-bottom:0.5em;
+    font-family: 'Rajdhani', sans-serif;
+}
+aside select {
+    width:12.7em;
+    height:2em;
+    margin-bottom:0.5em;
+    font-family: 'Rajdhani', sans-serif;
+}
+aside input[type=submit] {
+    margin:0.5em auto;
+    display:block;
+    width:10em;
+/*    height:3em;*/
+    padding:auto;
+    color:white;
+    font-size:0.8em;
+ 
+}
+
+
+
+.button {
+    background: #CC2936;
+    padding: 1.2em;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+
+footer{
+    width:100%;
+    background: #08415C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #ffffff; 
+    text-align: center;
+    position:relative;
+    bottom:-8em;
+}
+
+.footer-menu {
+    text-decoration: none;
+    text-align: center;
+    box-shadow: none;
+    
+}
+.footer-menu a {
+    color:white;
+    margin:1em;
+}
+
+.footer-logo {
+    width: 10%;
+    height: 10%;
+    padding: 0.5em;
+}
+
+footer address {
+    color: #fff;
+    text-align: center;  
+}
+
+footer address a {
+    color: #fff;
+}
+
+footer h5 {
+    color: #fff;
+    text-align: center;
+    
+}
+
+.copyright{
+    position:relative;
+    bottom:-8em;
+    background: #C0C0C0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #333333;
+    min-height: 2em;
+    text-align: center;
+}
 
 h1 {
     font-family: Rajdhani, sans-serif;
@@ -100,6 +429,24 @@ h2 {
     line-height: 46px;
     text-align: left;
     color: #333333;
+    z-index:3;
+}
+main h2:first-of-type{
+    position:relative;
+    top:8em;
+    margin-left:-1.5em
+}
+main h5:first-of-type{
+    position:relative;
+    top:-12em;
+    z-index:3;
+    margin-left:-3em
+}
+.attraction h2:first-of-type{
+    position:relative;
+    z-index: 4;
+    top:3em;
+    margin-left:-2em;
 }
 
 h3 {
@@ -169,59 +516,5 @@ a:hover {
 
 a:active {
     color: #B5FFE1;
-}
-
-/* Buttons, Lists and Tables */
-
-button { 
-    z-index: 2;
-    background: #CC2936;
-    padding: 0.8em;
-    border-radius: 8px;
-    color: #FFF;
-    font-family: 'Rajdhani', sans-serif;
-    border: none;
-}
-
-ul {
-    text-align: left;
-}
-
-table { 
-    margin-left:auto; 
-    margin-right:auto;
-}
-
-th, td {
-  border: 1px solid #388697;
-}
-
-thead {
-    background: #388697;
-    color: #fff;
-    text-align: center;
-}
-
-tbody {
-    font-family:'Open Sans', sans-serif;
-    font-weight: 200;
-    font-size: 1em;
-}
-
-/*Custom CSS for Home special elements */
-
-
-/*Custom CSS for Attractions special elements */
-
-
-/* Custom CSS for Visit us special elements */
-
-#buy_button {
-    z-index: 2;
-    background: #CC2936;
-    padding: 0.8em;
-    border-radius: 8px;
-    color: #FFF;
-    font-family: 'Rajdhani', sans-serif;
-    border: none;
+    text-decoration-line: none;
 }

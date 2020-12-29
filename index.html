@@ -1,183 +1,81 @@
 <!DOCTYPE HTML>
-<html lang ="en">
-
+<html lang="en">
     <head>
-        <title> Space Z</title>
-        <meta charset ="utf-8">
-        <meta name = "author" content="UoL CS WebDev - Space Z">
-        <meta name ="keywords" content="spaceZ, space, universe, theme park, entertainment, fun, family, rides, attraction, amusement">
-        <meta name="viewport" content="width=device-width, initial-scale =1.0" > 
-        <link rel="stylesheet" href="styles/stylesheet.css">
-        <style>
-            
-/*
-            header{
-                position:fixed;
-                height:7%;
-                margin:0px;
-                padding:10px 0px 20px 0px;
-                z-index:5;
-                box-shadow:none;
-            }
-            nav{
-                position:fixed;
-                width:100%;
-                padding-bottom: 1.7em;
-                z-index: 4;
-            }
-*/
-            main, aside{
-                position:relative;
-                top:4em;
-            }
-            aside{
-                position:relative;
-            max-width: 450px;
-            margin-left:25px;
-            padding:25px;
-            max-height:100%;
-            }
-            aside img{
-              max-width: 350px;
-            }
-            .main_nav{
-                display:flex;
-                flex-direction:row;
-                position:relative;
-                top:-610px;
-                margin:0px;
-                padding:0px;
-                width:100%;
-            }
-            #rightArrow{
-                align-self:flex-end;
-                max-width: 50px;
-                margin:0px;
-                 border:0px;
-            }
-             #leftArrow{
-                max-width: 50px;
-                 margin:0px;
-                 border:0px;
-                 box-shadow: none;
-            }
-            
-            #displayIndicator{
-                position:relative;
-                max-width:160px;
-                margin: 0px auto 0px auto;;
-                box-shadow: none;
-                top:250px;
-
-            }
-            .main_options{
-               position:relative;
-                top:-610px;
-                width:100%;
-             
-            }
-            .main_options ul{
-                display:block;
-                text-align: center;
-                
-            }
-            .main_options ul li{
-                
-                text-decoration: none;
-                display:inline;
-                padding-left:50px;
-                
-            }
-            footer{
-                position:relative;
-                bottom:-4em;
-            }
-            .copyright{
-                position:relative;
-                bottom:-4em;
-            }
-    
-
-        </style>
+        <title>Test Page</title>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content ="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
     </head>
     
     <body>
-        
-        <header>
-            <a href= "index.html"><img src ="images/logo.svg" alt="SpaceZ logo - a rocket" width="50"></a>
-<!--            <h1>Space Z</h1>-->
-        </header>
-        <nav class="main-menu">
-<!--            <a href="index.html">Home</a>-->
-            <a href="attractions.html">Attractions</a>
-            <a href="visit-us.html">Visit us</a>
-            <a id="main-button" href="visit-us.html">Buy tickets</a>
-        </nav>
-        
-        
-        <main>
-                
+            
+            <header>
+                <div class="logo"><a href="index.html"><img src="images/SpaceZ-logo.svg" id="logo" alt="theme park logo - a rocket"></a></div>
+                <nav class="header_nav"> 
+                    <ul>
+                        <li><a href="attractions.html">Attractions</a></li>
+                        <li><a href="visit-us.html">Visit Us</a></li>
+                        <li id="main-button"><a href="attractions.html">Buy Tickets</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="wrapper">
+                <main>
                     <div class="main_header">
                     <h3> Main Attraction</h3>
                        <p> Welcome! Welcome!! Welcome!!! one an all to the greatest out of this world, in this world, funnest place you will ever visit - Space Z we're more than just a theme park. We are the place where all your dreams will come true. And thats a Martian Guarantee. Please read - <a href="">Park Safety, Covid 19 protocols,</a> 
                      </p>
                     </div>
-                    <div class="main_display">
-                        <img src="images/frenjamin-benklin-IJb4fXx02Vg-unsplash.jpg" alt ="image of roller coaster at night" id="mainImg">
+                    <div class="slideshow_container">
+                        <div class ="slides">
+                            <img src="images/Home-Main-frenjamin-benklin.jpg" alt ="image of roller coaster at night" >
+                            <div class="caption"><p>Roller Coaster Rides</p></div>
+                        </div>
+                        <div class="main_options">
+                            <ul>
+                                <li class="button"><a href="visit-us.html">Special Offers</a></li>
+                                <li class="button"><a href="visit-us.html">Pricing $$$</a></li>
+                                <li class="button"><a href="attractions.html">Rides</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="main_nav">
-                        <img src="images/left%20arrow.svg" alt ="arrow to navigate left" id="leftArrow">
-                         <img src="images/displayProgress.svg" alt ="panel displaying progress of loading images" id="displayIndicator"> 
-                        <img src="images/right%20arrow.svg" alt ="arrow to navigate right" id="rightArrow">
-                    </div>
-                    <div class="main_options">
-                        <ul>
-                            <li><a href="visit-us.html">Special Offers</a></li>
-                            <li><a href="visit-us.html">Pricing <b>$$$</b></a></li>
-                            <li><a href="attractions.html">Rides</a></li>
-                        </ul>
-                    </div>
-              
-        </main>
+                        
+                </main>
         
-        <aside>
-            
-               
+            <aside>
                     <div class="shopAside"> <!-- clickable images -->
                         <h4>Shopping</h4>
-                        <img src="images/shopping.jpg" alt="picture of a woman with a shopping bag">
+                        <img src="images/Home-Shop.jpg" alt="picture of a woman with a shopping bag">
                         <p> What is a theme park without shopping, and souvenirs of Martians and Black hole nail polish, and Donna Karen's line of Moon Raker pumps for the ladies and Nike's Saturn summer editions  -  well an astronomic flop. Shop Shop Shop till you drop at all of Space Z's  5 star rated shops and next time bring all your friends and family with you </p>
                     </div> 
                     <div class="mapAside">
                         <h4>Park Map</h4>
-                        <img src="images/park%20map.jpg" alt="picture of the observatory at SpaceZ" >
+                        <img src="images/Home-park%20map.jpg" alt="picture of the observatory at SpaceZ" >
                         <p> Definitely no Crying at Space Z. Kids hardly ever get lost. Thanks to our Park Map, map apps using GPS technology and our friendly, Galactic Ushers you will never get lost </p>
                     </div>
                     <div class="foodAside">
                         <h4>Restaurants</h4>
-                        <img src="images/solar%20eclipse%20restaurant.jpg" alt="picture of people eating at a resturant" >
+                        <img src="images/Home-solar%20eclipse%20restaurant.jpg" alt="picture of people eating at a resturant" >
                            <p> The Solar Eclipse is one of our oldest and most popular restaurants with families. Famous celebs like Justin Beiber, Will Smith, Barack Obama, Jennifer Lopez, Marilyn Monroe and Elvis, to name a few,  have all dined at the Solar Eclipse at some point in their careers.</p> 
                     </div> 
             
-                
-        </aside> 
-       
-    
-        <!-- Footer-->
+            </aside>
+        </div>
+        
         <footer>
-            <img  class="footer-logo" src="images/logo.svg" alt="logo-spacez">
+             <img  class="footer-logo" src="images/SpaceZ-logo.svg" alt="logo-spacez">
             <h5>Space Z</h5>
             <address>
                 <a href="mailto:info@spacez.com">info@spacez.com</a>
                 <a href="tel:+19345929023">+1 934 592 9023</a>
             </address>
-            <nav class="footer-menu">
+            <nav class="footer-nav">
                 <a href="about.html">About us</a>
                 <a href="contact.html">Contact us</a>
                 <a href="faq.html">FAQ</a>
             </nav>     
         </footer>
         <p class="copyright">&copy; 2020 Space Z. All rights reserved.</p>
-        
     </body>
+
 </html>
