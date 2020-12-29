@@ -10,60 +10,108 @@
         <link rel="stylesheet" href="style.css">
     </head>
     
-    <body class="container">
-        <header>
-            <a href= "index.html"><img src ="images/logo.svg" alt="SpaceZ logo - a rocket"></a>
-            <nav class="main-menu">
-<!--            <a href="index.html">Home</a>-->
-                <a href="attractions.html">Attractions</a>
-                <a href="visit-us.html">Visit us</a>
-                <a id="main-button" href="visit-us.html">Buy tickets</a>
-            </nav>
-        </header>
-        <div class="main_grid">
-            <main>
-                <!-- Landing area for asides-->
-                <h2>Spaceship ride</h2>
-                <img src="images/sandro-katalina-k1bO_VTiZSs-unsplash.jpg" alt="spaceship-ride">
-                <p>Our flagiship attraction that will inmerse you in a trip to outer space</p>   
-            </main> 
-            <!-- Asides for navigation--> 
-            <aside class="rides">
-                <a href="#rides"><h3>Our rides</h3></a>
-                <img src="images/nathan-duck-KnLj3o9A66E-unsplash.jpg" alt="rides-photo">
-                <button>View more</button>
-            </aside>
-            <div class="observatory">
+    <body>
+        
+         <header>
+             <div class="logo"><a href="index.html"><img src="images/SpaceZ-logo.svg" id="logo" alt="theme park logo - a rocket"></a></div>
+                <nav class="header_nav"> 
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="attractions.html">Attractions</a></li>
+                        <li><a href="visit-us.html">Visit Us</a></li>
+                       <li id="main-button"> <a href="attractions.html">Buy Tickets</a></li>
+                    </ul>
+                </nav>
+            </header>
+        <div class="wrapper">
+        <main id="attractions">
+            
+            <!-- Landing area for asides-->
+            
+            <div class ="attraction">
+                <h2>Special Feature - Spaceship ride</h2>
+                <img src="images/Attractions-Main-sandro-katalina.jpg" alt="spaceship-ride">
+                <p>Our flagiship attraction that will inmerse you in a trip to outer space</p> 
+            </div>
+            
+            <div class="attraction">
                 <h3>Observatory</h3>
-                <img src="images/brian-mcgowan-0A450BR1JWk-unsplash.jpg" alt="observatory-photo"><br>
-                <button>Schedule your visit</button>
+                <img src="images/Attractions-Observatory-brian-mcgowan.jpg" alt="observatory-photo">
+                <p> Porttitor eget dolor morbi non arcu risus quis. Natoque penatibus et magnis dis parturient. Id leo in vitae turpis massa sed. Id diam maecenas ultricies mi eget mauris pharetra et. Erat nam at lectus urna duis. Tellus elementum sagittis vitae et.</p>
+                <button class ="button">Schedule your visit</button>
             </div>
-            <div class="events">
-                <h3>Events</h3>
-                <img src="images/pablo-heimplatz-ZODcBkEohk8-unsplash.jpg" alt="events-photo"><br>
-                <button>Check our schedule</button>
+            
+            <div class="attraction">
+                <h3>Events Centers</h3>
+                <img src="images/Attractions-Events-pablo-heimplatz.jpg" alt="events-photo">
+                <p> Amet massa vitae tortor condimentum lacinia quis vel eros donec. Mi in nulla posuere sollicitudin aliquam ultrices. Eget mi proin sed libero enim sed. At varius vel pharetra vel. Morbi tincidunt ornare massa eget egestas. Quis enim lobortis scelerisque fermentum. Nunc vel risus commodo viverra.</p>
+                <button class ="button">Check our schedule</button>
             </div>
-            <div class="food">
-                <h3>Food</h3>
-                <img src="images/solar%20eclipse.jpg" alt="The solar eclipse restaurant on display" width ="640">
+            
+            <div class="attraction">
+                <h3>Food & Drink</h3>
+                <img src="images/Attractions-restaurante-solar%20eclipse.jpg" alt="The solar eclipse restaurant on display" width ="640">
                 <p> The Solar Eclipse is one of our oldest and most popular restaurants with form families. We have world renouned chefs like Emril Lagasse serving up unique meals like tasty pork tender loing in cosmic dust sauce with a choice of 5 astronomical sides. Famous celebs like Justin Beiber, Will Smith, Barack Obama, Jennifer Lopez, Marilyn Monroe and Elvis, just to name a few, have all dined at the Solar Eclipse at some point in their careers. </p> 
-                <button>Book a meal</button>
+                <button class="button">Book a meal</button>
             </div> 
+        
+            <div class="attraction">    
+                <h3 id="rides">Shopping & More</h3>
+                <img src="images/Attractions-ShoppingMore-nathan-duck.jpg" alt="rides-photo">
+                <p> Euismod lacinia at quis risus sed vulputate odio. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Non tellus orci ac auctor augue. Velit aliquet sagittis id consectetur purus ut faucibus. Interdum velit euismod in pellentesque massa. Tortor posuere ac ut consequat semper viverra nam libero justo.</p>
+                <button class ="button">View more</button>
+            </div>
+        
+        </main> 
+    
+        <!-- Asides for navigation--> 
+        <aside >
+            <div>
+                <h3>Read - Before you ride.</h3>
+                
+                    <div>
+                        <h4>Galactic Insurance Plan</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div>
+                        <h4>Safety Policy</h4>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div>
+                        <h4>Refund Policy</h4>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div>
+                        <h4>Do's and Don'ts</h4>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div>
+                        <h4>Park Map</h4>
+                       <img src="images/Attractions-parkmap-sid-verma.jpg" alt="park-map">
+                    </div>
+                    <div>
+                        <h4>More Info</h4>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                
+            </div>
+            
+        </aside>
         </div>
         <!-- Footer-->
         <footer>
-            <img src="images/logo.svg" alt="logo-spacez">
+            <img  class="footer-logo" src="images/SpaceZ-logo.svg" alt="logo-spacez">
+            <h5>Space Z</h5>
             <address>
                 <a href="mailto:info@spacez.com">info@spacez.com</a>
-                <br>
                 <a href="tel:+19345929023">+1 934 592 9023</a>
             </address>
-            <nav class="footer-menu">
+            <div class="footer-menu">
                 <a href="about.html">About us</a>
                 <a href="contact.html">Contact us</a>
                 <a href="faq.html">FAQ</a>
-            </nav>  
-            <p class="copyright">&copy; 2020 Space Z. All rights reserved.</p>
+            </div>     
         </footer>
+        <p class="copyright">&copy; 2020 Space Z. All rights reserved.</p>
     </body>
 </html>
