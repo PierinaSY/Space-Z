@@ -586,7 +586,7 @@ a:active {
 @keyframes bganimation {
     0% {background-color: #08415C;}
     25% {background-color: #08415C; background-blend-mode: soft-light;}
-    50% {background-color: darkred;}
+    50% {background-color: red;}
     75% {background-color: #B5FFE1; background-blend-mode: overlay;}
     100% {background-color: #B5FFE1; }
 }
